@@ -57,8 +57,8 @@ def get_photo(biying, category):
             url = 'https://bird.ioliu.cn/v2?url=http://wp.birdpaper.com.cn/intf/GetListByCategory?cids=30&pageno=1&count=30'
             count = 30
         elif category == 4:
-            url = 'https://bird.ioliu.cn/v2?url=http://wp.birdpaper.com.cn/intf/GetListByCategory?cids=30&pageno=1&count=50'
-            count = 50
+            url = 'https://bird.ioliu.cn/v2?url=http://wp.birdpaper.com.cn/intf/GetListByCategory?cids=9&pageno=0&count=100'
+            count = 100
         elif category == 5:
             url = 'https://bird.ioliu.cn/v2?url=http://wp.birdpaper.com.cn/intf/GetListByCategory?cids=15&pageno=0&count=50'
             count = 50
