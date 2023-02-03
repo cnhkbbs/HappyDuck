@@ -1,4 +1,4 @@
-# HappyDuck
+# WallpaperDuck
 一个简洁的自动换壁纸小工具
 ## 使用
 点击这里下载
