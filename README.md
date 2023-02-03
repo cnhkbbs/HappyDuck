@@ -2,6 +2,7 @@
 一个简洁的自动换壁纸小工具
 ## 使用
 点击这里下载
+https://github.com/cnhkbbs/HappyDuck/releases
 ### 自定义
 你可以通过修改config.json来进行自定义
 ```
