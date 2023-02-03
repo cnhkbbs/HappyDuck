@@ -25,23 +25,29 @@ def set_wallpaper():
 
 
 def get_data(url, count):
-    photo_json = requests.get(url, headers)  # 获取json数据
-    photo_dict = json.loads(photo_json.text)  # 转换为字典
-    randomnum = random.randint(0, count)
-    target = photo_dict['data']['list'][randomnum]['url']
-    photo = requests.get(target, headers).content
-    with open('photo.jpg', 'wb') as fp:
-        fp.write(photo)
-    set_wallpaper()
+    try:
+        photo_json = requests.get(url, headers)  # 获取json数据
+        photo_dict = json.loads(photo_json.text)  # 转换为字典
+        randomnum = random.randint(0, count)
+        target = photo_dict['data']['list'][randomnum]['url']
+        photo = requests.get(target, headers).content
+        with open('photo.jpg', 'wb') as fp:
+            fp.write(photo)
+        set_wallpaper()
+    except:
+        win32api.MessageBox(0, "请检查您的网络是否通畅鸭", "啊哦！出错了", win32con.MB_OK)
 
 
 def get_photo(biying, category):
     if biying:
         url = 'https://tool.liumingye.cn/bingimg/img.php'
-        photo = requests.get(url, headers).content
-        with open('photo.jpg', 'wb') as fp:
-            fp.write(photo)
-        set_wallpaper()
+        try:
+            photo = requests.get(url, headers).content
+            with open('photo.jpg', 'wb') as fp:
+                fp.write(photo)
+            set_wallpaper()
+        except:
+            win32api.MessageBox(0, "请检查您的网络是否通畅鸭", "啊哦！出错了", win32con.MB_OK)
 
     else:
         if category == 0:
@@ -91,12 +97,14 @@ if __name__ == '__main__':
     try:
         with open('config.json', 'rb') as jsoninfo:
             json_data = json.load(jsoninfo)
+        get_photo(json_data["biying"], json_data["category"])
     except:
         win32api.MessageBox(0, "您似乎是第一次启动或是丢失了config.json文件，重新打开本软件即可", "哇哦", win32con.MB_OK)
         json_config = '{"hitokoto":true,"biying":false,"category":0}'
         with open('config.json', 'w') as jsonwrite:
             jsonwrite.write(json_config)
-
-    get_photo(json_data["biying"], json_data["category"])
-    if json_data["hitokoto"]:
-        get_hitokoto()
+    try:
+        if json_data["hitokoto"]:
+            get_hitokoto()
+    except:
+        a = 0
