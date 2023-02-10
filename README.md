@@ -1,5 +1,5 @@
 # WallpaperDuck
-一个简洁的自动换壁纸小工具
+一个随机壁纸小工具
 ## 使用
 点击这里下载
 https://github.com/cnhkbbs/WallpaperDuck/releases
