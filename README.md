@@ -3,17 +3,8 @@
 ## 使用
 点击这里下载
 https://github.com/cnhkbbs/WallpaperDuck/releases
-### 自定义
-你可以通过修改config.json来进行自定义
-```
-{
-    "hitokoto":true,  #是否打开一言     true或false
-    "biying":false,   #启用必应美图     true或false  （启用该选项会使category选项失效）
-    "category":0      #壁纸类型         值见下文     （该选项只在biying选项为flase时可用）
-}
-```
 
-category可用值
+## 壁纸类型
 ```
 # 0 随机
 # 1 4K
@@ -28,3 +19,9 @@ category可用值
 ```
 ## 自行编译
 克隆本仓库所有文件即可自行编译
+
+## 更新日志 V 1.1.0
+
+1. 重构主程序，优化运行逻辑
+2. 更换一言现实方式（测试阶段）
+3. 增加用于修改配置的GUI程序，方便交互
