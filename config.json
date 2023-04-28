@@ -1,5 +1,8 @@
 {
-    "hitokoto":true,
-    "biying":false,
-    "category":0
+"hitokoto":false,
+"biying":false,
+"category":0,
+"mode":0,
+"updatecycle":6,
+"onchange":false
 }
