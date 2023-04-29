@@ -1,7 +1,7 @@
 # WallpaperDuck
 一个随机壁纸小工具
 
-就像万花筒中的图案， 这个软件有着无限的可能性， 每一次切换都是一场奇妙的冒险
+就像万花筒中的图案， 这个软件有着无限的可能性， 每一次切换都是一场奇妙的冒险    ——GPT
 ## 使用
 点击这里下载
 https://github.com/cnhkbbs/WallpaperDuck/releases
