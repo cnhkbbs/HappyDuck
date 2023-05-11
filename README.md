@@ -25,5 +25,5 @@ https://github.com/cnhkbbs/WallpaperDuck/releases
 ## 更新日志 V 1.1.0
 
 1. 重构主程序，优化运行逻辑
-2. 更换一言现实方式（测试阶段）
-3. 增加用于修改配置的GUI程序，方便交互
+2. 更换一言展示方式（beta）
+3. 增加用于修改配置的GUI程序
